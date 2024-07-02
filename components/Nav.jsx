@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation";
 
 // framer motion
 import { motion } from "framer-motion";
+
 const links = [
   { path: "/", name: "home" },
   { path: "/projects", name: "my projects" },
   { path: "/contact", name: "contact" },
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet}) => {
+const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
   const handleClick = () => {
     closeSheet(); // Close the sheet when a link is clicked
   };
@@ -22,7 +23,8 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet}) => {
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
         return (
-          <Link onClick={handleClick}
+          <Link
+            onClick={handleClick}
             href={link.path}
             key={index}
             className={`capitalize ${linkStyles}`}
