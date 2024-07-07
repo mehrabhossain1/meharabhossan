@@ -18,7 +18,7 @@ import ProjectCard from "./ProjectCard";
 const projectData = [
   {
     image: "/work/1.png",
-    category: "react js",
+    category: "next js",
     name: "Homeland ",
     description:
       "A real estate rental website made with react, tailwind & javascript.",
