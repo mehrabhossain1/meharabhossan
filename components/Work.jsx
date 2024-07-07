@@ -21,7 +21,7 @@ const projectData = [
     category: "react js",
     name: "Homeland ",
     description:
-    "A real estate rental website made with react, tailwind & javascript.",
+      "A real estate rental website made with react, tailwind & javascript.",
     link: "https://beautiful-homeland.netlify.app/",
     github: "https://github.com/premvarma2002/Real-Estate",
   },
@@ -89,7 +89,7 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4"> My Latest Projects</h2>
           <p className="subtitle mb-8">
-          Step into the code I've built and brought to life.
+            Step into the code I've built and brought to life.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>

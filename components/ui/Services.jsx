@@ -8,24 +8,24 @@ import {
 } from "./card";
 
 const servicesData = [
-  {
-    icon: <Wand2 size={72} strokeWidth={0.8} />,
-    title: "Web Design",
-    description:
-      "I create beautiful and functional web designs for your brand and vision ",
-  },
+  // {
+  //   icon: <Wand2 size={72} strokeWidth={0.8} />,
+  //   title: "Web Design",
+  //   description:
+  //     "I create beautiful and functional web designs for your brand and vision ",
+  // },
   {
     icon: <MonitorSmartphone size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
       "I build fast and secure web applications, using the latest tools and technologies. ",
   },
-  {
-    icon: <Smartphone className="  " size={72} strokeWidth={0.8} />,
-    title: "App Development",
-    description:
-      "I develop high-quality native and cross-platform apps for iOS and Android, using the best practices and frameworks.",
-  },
+  // {
+  //   icon: <Smartphone className="  " size={72} strokeWidth={0.8} />,
+  //   title: "App Development",
+  //   description:
+  //     "I develop high-quality native and cross-platform apps for iOS and Android, using the best practices and frameworks.",
+  // },
 ];
 
 const Services = () => {
