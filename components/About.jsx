@@ -2,7 +2,7 @@ import DevImg from "./DevImg";
 import Image from "next/image";
 import { skills } from "@/constants";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import {Button, Tooltip } from '@nextui-org/react';
+import { Button, Tooltip } from "@nextui-org/react";
 
 import {
   User2,
@@ -17,27 +17,27 @@ import {
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: "Prem Varma",
+    text: "Meharab Hossan",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+91 9511 872 298",
+    text: "+8801700952084",
   },
   {
     icon: <MailIcon size={20} />,
-    text: "vakilverma1982@gmail.com",
+    text: "mehrab.munna00@gmail.com",
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born on 18th Sep , 2002",
+    text: "Born on 20th Feb , 2001",
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Master on Computer Applications",
+    text: "Bachelor of Business Studies",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: " Rajura ,Maharashtra , India ",
+    text: " Barishal, Bangladesh ",
   },
 ];
 
@@ -46,19 +46,19 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "The New Era English High School ,Rajura",
+        university: "Barishal Zilla School , Barishal",
         qualification: "S.S.C",
-        years: "2008 - 2018",
+        years: "2008 - 2017",
       },
       {
-        university: "Guru nanak college of science , Ballarpur",
+        university: "Govt. Syed Hatem Ali College, Barishal",
         qualification: "H.S.C",
-        years: "2018 - 2020",
+        years: "2018 - 2019",
       },
       {
-        university: "Guru nanak College of Science",
-        qualification: "B.SC Computer Science",
-        years: "2020 - 2023",
+        university: "National University",
+        qualification: "Bachelor of Business Studies",
+        years: "2021 - Present",
       },
       // {
       //   university: "LPU University",
@@ -146,7 +146,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/dev.png"
+              // imgSrc="/about/dev.png"
             />
           </div>
           {/* tabs  */}
@@ -197,7 +197,7 @@ const About = () => {
                     <div className="flex  flex-col gap-y-2">
                       <div className="text-primary">Languages Skill</div>
                       <div className="border-b border-border">
-                        English , German , Hindi , Marathi
+                        English , Bengali , Hindi
                       </div>
                     </div>
                   </div>
@@ -212,14 +212,14 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-y-8">
                       {/* experience  */}
                       <div className="flex flex-col gap-y-6">
-                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                        {/* <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="capitalize font-medium">
                             {getData(qualificationData, "experience").title}
                           </h4>
-                        </div>
+                        </div> */}
                         {/* list  */}
-                        <div className="flex flex-col gap-y-8">
+                        {/* <div className="flex flex-col gap-y-8">
                           {getData(qualificationData, "experience").data.map(
                             (item, index) => {
                               const { company, role, years } = item;
@@ -243,7 +243,7 @@ const About = () => {
                               );
                             }
                           )}
-                        </div>
+                        </div> */}
                       </div>
                       {/* education  */}
                       <div className="flex flex-col gap-y-6">
@@ -291,27 +291,29 @@ const About = () => {
                       <div className="border-b border-border mb-4"></div>
                       {/* Skill List  */}
                       <div className="mt-10 flex flex-wrap sm:gap-12 gap-4 justify-center items-center">
-
-                      {skills.map((skills) => (
-                        <div className="block-container w-20 h-20" key={skills.name}>
-                            <div className="rounded-xl "/>
-                            <Tooltip content={skills.name}  className='border border-primary bg-transparent text-primary rounded-md'>
-                                <Button className="border backdrop-blur-2xl dark:bg-zinc-800/10 dark:border-neutral-800/60 rounded-xl flex justify-center items-center h-20 w-20" >
-                                    <Image 
-                                        src={skills.imageUrl}
-                                        alt={skills.name} 
-                                        // className="w-1/2 h-1/2 object-contain"
-                                        className="w-16 h-16 object-contain"
-                                        />
-                                </Button>
+                        {skills.map((skills) => (
+                          <div
+                            className="block-container w-20 h-20"
+                            key={skills.name}
+                          >
+                            <div className="rounded-xl " />
+                            <Tooltip
+                              content={skills.name}
+                              className="border border-primary bg-transparent text-primary rounded-md"
+                            >
+                              <Button className="border backdrop-blur-2xl dark:bg-zinc-800/10 dark:border-neutral-800/60 rounded-xl flex justify-center items-center h-20 w-20">
+                                <Image
+                                  src={skills.imageUrl}
+                                  alt={skills.name}
+                                  // className="w-1/2 h-1/2 object-contain"
+                                  className="w-16 h-16 object-contain"
+                                />
+                              </Button>
                             </Tooltip>
-                           
-                        </div>
-                       
-                    ))}
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    </div>
-                    
                   </div>
                 </TabsContent>
               </div>
